@@ -5,8 +5,8 @@ nameInput.addEventListener('input', onInputChange)
 
 function onInputChange(event) {
     
-    if (event.currentTarget.value === '') {
-        nameOutput.textContent.trim() = 'Anonymous'
+    if (event.currentTarget.value.trim() === '') {
+        nameOutput.textContent = 'Anonymous'
     } else {
         nameOutput.textContent = event.currentTarget.value;
     }
