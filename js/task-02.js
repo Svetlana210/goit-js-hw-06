@@ -9,7 +9,7 @@ const ingredients = [
 
 
 const listEl = document.querySelector('#ingredients');
-// console.log(listEl)
+
 const elements = ingredients.map(ingredient => {
 
   const itemEl = document.createElement('li');
@@ -17,7 +17,7 @@ const elements = ingredients.map(ingredient => {
   itemEl.textContent = ingredient;
   return itemEl;
 });
-// console.log(elements);
+
 listEl.append(...elements);
 console.log(listEl);
 
