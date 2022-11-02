@@ -6,7 +6,7 @@ function toggle(class1, class2) {
 }
 
 inputEl.addEventListener('blur', onBlurInput)
-const dataLength = 6;
+const dataLength = Number(inputEl.dataset.length)
 function onBlurInput(event) {
     if (event.currentTarget.value.length === dataLength) {
         toggle('valid', 'invalid')
